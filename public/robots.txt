@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://site.xulai.fun
+
+# Sitemaps
+Sitemap: https://site.xulai.fun/sitemap.xml
