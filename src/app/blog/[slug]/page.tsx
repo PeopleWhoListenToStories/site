@@ -12,7 +12,8 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function BlogPost({ params }) {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default async function BlogPost({ params }: { params: any }) {
   const { slug } = params;
   const filePath = path.join(process.cwd(), 'content/blog', `${slug}.md`);
   const fileContents = fs.readFileSync(filePath, 'utf8');
